@@ -8,15 +8,17 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int count = 0;
+	int numbr = 0;
 	char c;
 	char *s;
 
 	va_start(args, format);
-	
+
 	while (*format)
 	{
 		if (*format == '%');
+		format++;
 	}
-	format++;
 
+	return (numbr);
+}
